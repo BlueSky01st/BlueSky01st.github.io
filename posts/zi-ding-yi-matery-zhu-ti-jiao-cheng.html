@@ -1,0 +1,1823 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="自定义Matery主题教程, BlueSky01st&#39;s Blog">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+    <title>自定义Matery主题教程 | BlueSky01st&#39;s Blog</title>
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="/css/my.css">
+
+    <script src="/libs/jquery/jquery.min.js"></script>
+	<script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
+	<link rel="apple-touch-icon" href="">
+	<link rel="manifest" href="/manifest.json">
+	<script src="https://cdn.jsdelivr.net/gh/BlueSky01st/mylive2d@master/autoload.js"></script>
+
+<meta name="generator" content="Hexo 4.2.1"><link rel="alternate" href="/atom.xml" title="BlueSky01st's Blog" type="application/atom+xml">
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css">
+<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head>
+
+
+<body>
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/" class="waves-effect waves-light">
+                    
+                    <img src="/medias/logo.png" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">BlueSky01st&#39;s Blog</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>首页</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/tags" class="waves-effect waves-light">
+      
+      <i class="fas fa-tags" style="zoom: 0.6;"></i>
+      
+      <span>标签</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/categories" class="waves-effect waves-light">
+      
+      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      
+      <span>分类</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/archives" class="waves-effect waves-light">
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>归档</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/about" class="waves-effect waves-light">
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>关于</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/contact" class="waves-effect waves-light">
+      
+      <i class="fas fa-comments" style="zoom: 0.6;"></i>
+      
+      <span>留言板</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/friends" class="waves-effect waves-light">
+      
+      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
+      
+      <span>友情链接</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/artitalk" class="waves-effect waves-light">
+      
+      <i class="fas fa-comment-dots" style="zoom: 0.6;"></i>
+      
+      <span>碎语</span>
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
+
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="/medias/logo.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">BlueSky01st&#39;s Blog</div>
+        <div class="logo-desc">
+            
+            Never really desperate, only the lost of the soul.
+            
+        </div>
+    </div>
+
+    
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="/" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			首页
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/tags" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-tags"></i>
+			
+			标签
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			分类
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/archives" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-archive"></i>
+			
+			归档
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/about" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-user-circle"></i>
+			
+			关于
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/contact" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-comments"></i>
+			
+			留言板
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/friends" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-address-book"></i>
+			
+			友情链接
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/artitalk" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-comment-dots"></i>
+			
+			碎语
+		</a>
+          
+        </li>
+        
+        
+        <li><div class="divider"></div></li>
+        <li>
+            <a href="https://github.com/BlueSky01st" class="waves-effect waves-light" target="_blank">
+                <i class="fab fa-github-square fa-fw"></i>Visit Me!
+            </a>
+        </li>
+        
+    </ul>
+</div>
+
+
+        </div>
+
+        
+            <style>
+    .nav-transparent .github-corner {
+        display: none !important;
+    }
+
+    .github-corner {
+        position: absolute;
+        z-index: 10;
+        top: 0;
+        right: 0;
+        border: 0;
+        transform: scale(1.1);
+    }
+
+    .github-corner svg {
+        color: #0f9d58;
+        fill: #fff;
+        height: 64px;
+        width: 64px;
+    }
+
+    .github-corner:hover .octo-arm {
+        animation: a 0.56s ease-in-out;
+    }
+
+    .github-corner .octo-arm {
+        animation: none;
+    }
+
+    @keyframes a {
+        0%,
+        to {
+            transform: rotate(0);
+        }
+        20%,
+        60% {
+            transform: rotate(-25deg);
+        }
+        40%,
+        80% {
+            transform: rotate(10deg);
+        }
+    }
+</style>
+
+<a href="https://github.com/BlueSky01st" class="github-corner tooltipped hide-on-med-and-down" target="_blank"
+   data-tooltip="Visit Me!" data-position="left" data-delay="50">
+    <svg viewBox="0 0 250 250" aria-hidden="true">
+        <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+        <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+              fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+        <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+              fill="currentColor" class="octo-body"></path>
+    </svg>
+</a>
+        
+    </nav>
+
+</header>
+
+    
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/12.jpg')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title">自定义Matery主题教程</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<main class="post-container content">
+
+    
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        width: 345px;
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        margin: 35px 0 15px 0;
+        padding-left: 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget {
+        width: 345px;
+        padding-left: 20px;
+        background-color: rgb(255, 255, 255,0.7);
+        border-radius: 10px;
+        box-shadow: 0 10px 35px 2px rgba(0, 0, 0, .15), 0 5px 15px rgba(0, 0, 0, .07), 0 2px 5px -5px rgba(0, 0, 0, .1) !important;
+    }
+    #toc-content {
+        height: calc(100vh - 250px);
+        overflow: auto;
+    }
+
+    #toc-content ol {
+        padding-left: 20px;
+    }
+
+    #toc-content ol li {
+        padding-left: 20px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+
+        position: absolute;
+        right: 23.5vw;
+        display: block;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 15px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                    <div class="article-tag">
+                        
+                            <a href="/tags/Hexo/">
+                                <span class="chip bg-color">Hexo</span>
+                            </a>
+                        
+                            <a href="/tags/Blog/">
+                                <span class="chip bg-color">Blog</span>
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/Hexo/" class="post-category">
+                                Hexo
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
+                    2020-06-22
+                </div>
+                
+
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
+                    2020-08-10
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
+                    2.7k
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
+                    12 分
+                </div>
+                
+
+                
+                    <span id="busuanzi_container_page_pv" class="info-break-policy" style='display:none'></span>
+                        <i class="far fa-eye fa-fw"></i>阅读次数:&nbsp;&nbsp;
+                        <span id="busuanzi_value_page_pv"></span>
+                    
+				
+            </div>
+        </div>
+        <hr class="clearfix">
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <h2 id="官方文档"><a href="#官方文档" class="headerlink" title="官方文档"></a>官方文档</h2><p>先按照官方文档操作一遍—&gt;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank" rel="noopener">传送门</a></p>
+<h2 id="自定义"><a href="#自定义" class="headerlink" title="自定义"></a>自定义</h2><h3 id="添加404页面"><a href="#添加404页面" class="headerlink" title="添加404页面"></a>添加404页面</h3><p>在<code>/source/</code>新建<code>404.md</code>，内容如下：</p>
+<pre class="line-numbers language-yaml"><code class="language-yaml"><span class="token punctuation">---</span>
+<span class="token key atrule">title</span><span class="token punctuation">:</span> <span class="token number">404</span>
+<span class="token key atrule">date</span><span class="token punctuation">:</span> <span class="token datetime number">2020-06-22 15:04:45</span>
+<span class="token key atrule">type</span><span class="token punctuation">:</span> <span class="token string">"404"</span>
+<span class="token key atrule">layout</span><span class="token punctuation">:</span> <span class="token string">"404"</span>
+<span class="token key atrule">description</span><span class="token punctuation">:</span> <span class="token string">"Oops～，我崩溃了！找不到你想要的页面 :("</span>
+<span class="token punctuation">---</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>然后在<code>/themes/matery/layout/</code>目录下新建一个<code>404.ejs</code>文件，内容如下：</p>
+<pre class="line-numbers language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>text/css<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token style language-css">
+    <span class="token comment" spellcheck="true">/* don't remove. */</span>
+    <span class="token selector"><span class="token class">.about-cover</span> </span><span class="token punctuation">{</span>
+        <span class="token property">height</span><span class="token punctuation">:</span> <span class="token number">75</span>vh<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">></span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>bg-cover pd-header about-cover<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>container<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>row<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>col s10 offset-s1 m8 offset-m2 l8 offset-l2<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>brand<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>title center-align<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+                        404
+                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>description center-align<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+                        &lt;%= page.description %>
+                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">></span></span><span class="token script language-javascript">
+    <span class="token comment" spellcheck="true">// 每天切换 banner 图.  Switch banner image every day.</span>
+    <span class="token function">$</span><span class="token punctuation">(</span><span class="token string">'.bg-cover'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">css</span><span class="token punctuation">(</span><span class="token string">'background-image'</span><span class="token punctuation">,</span> <span class="token string">'url(/medias/banner/'</span> <span class="token operator">+</span> <span class="token keyword">new</span> <span class="token class-name">Date</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">getDay</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token string">'.jpg)'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="修改新建文章模版"><a href="#修改新建文章模版" class="headerlink" title="修改新建文章模版"></a>修改新建文章模版</h3><p>打开博客<code>scaffolds/post.md</code>,修改为：</p>
+<pre class="line-numbers language-yaml"><code class="language-yaml"><span class="token punctuation">---</span>
+<span class="token key atrule">title</span><span class="token punctuation">:</span> <span class="token punctuation">{</span><span class="token punctuation">{</span> title <span class="token punctuation">}</span><span class="token punctuation">}</span>
+<span class="token key atrule">date</span><span class="token punctuation">:</span> <span class="token punctuation">{</span><span class="token punctuation">{</span> date <span class="token punctuation">}</span><span class="token punctuation">}</span>
+<span class="token key atrule">top</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
+<span class="token key atrule">cover</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
+<span class="token key atrule">toc</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+<span class="token key atrule">snow</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
+<span class="token key atrule">mathjax</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
+<span class="token key atrule">author</span><span class="token punctuation">:</span> 
+<span class="token key atrule">img</span><span class="token punctuation">:</span> 
+<span class="token key atrule">coverImg</span><span class="token punctuation">:</span> 
+<span class="token key atrule">password</span><span class="token punctuation">:</span> 
+<span class="token key atrule">summary</span><span class="token punctuation">:</span> 
+<span class="token key atrule">tags</span><span class="token punctuation">:</span> 
+<span class="token key atrule">categories</span><span class="token punctuation">:</span> 
+<span class="token punctuation">---</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h2 id="categories"><a href="#categories" class="headerlink" title="categories: "></a>categories: </h2><h3 id="增加建站时间"><a href="#增加建站时间" class="headerlink" title="增加建站时间"></a>增加建站时间</h3><p>在<code>themes/matery/_config.yml</code>找到以下内容(42行)：</p>
+<pre class="line-numbers language-yaml"><code class="language-yaml"><span class="token comment" spellcheck="true"># Website start time.</span>
+<span class="token comment" spellcheck="true"># 站点运行开始时间.</span>
+<span class="token key atrule">time</span><span class="token punctuation">:</span>
+  <span class="token key atrule">enable</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+  <span class="token key atrule">year</span><span class="token punctuation">:</span>  <span class="token comment" spellcheck="true"># 年份</span>
+  <span class="token key atrule">month</span><span class="token punctuation">:</span>  <span class="token comment" spellcheck="true"># 月份</span>
+  <span class="token key atrule">date</span><span class="token punctuation">:</span>  <span class="token comment" spellcheck="true"># 日期</span>
+  <span class="token key atrule">hour</span><span class="token punctuation">:</span>  <span class="token comment" spellcheck="true"># 小时</span>
+  <span class="token key atrule">minute</span><span class="token punctuation">:</span>  <span class="token comment" spellcheck="true"># 分钟</span>
+  <span class="token key atrule">second</span><span class="token punctuation">:</span>  <span class="token comment" spellcheck="true"># 秒</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>修改为你的建站时间即可</p>
+<h3 id="添加动漫人物"><a href="#添加动漫人物" class="headerlink" title="添加动漫人物"></a>添加动漫人物</h3><p>在我的另一篇文章里—&gt;<a href="https://bluesky01st.github.io/posts/live2d-kan-ban-niang-bilibili-2233.html" target="_blank" rel="noopener">传送门</a><br>这时，便出现了一个<code>Bug</code>，就是不蒜子，即网站访问量不显示了解决方法如下：<br>打开<code>themes\matery\layout\_partial</code>中的<code>footer.ejs</code>，把将本站总访问量和访客数的代码改为如下：</p>
+<pre class="line-numbers language-js"><code class="language-js"><span class="token operator">&lt;</span><span class="token operator">%</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>theme<span class="token punctuation">.</span>busuanziStatistics <span class="token operator">&amp;&amp;</span> theme<span class="token punctuation">.</span>busuanziStatistics<span class="token punctuation">.</span>totalTraffic<span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token operator">%</span><span class="token operator">></span>      
+    <span class="token operator">&lt;</span>span id<span class="token operator">=</span><span class="token string">"busuanzi_container_site_pv"</span> style<span class="token operator">=</span><span class="token string">'display:none'</span><span class="token operator">></span><span class="token operator">&lt;</span><span class="token operator">/</span>span<span class="token operator">></span>
+        <span class="token operator">&lt;</span>i <span class="token keyword">class</span><span class="token operator">=</span><span class="token string">"fa fa-heart-o"</span><span class="token operator">></span><span class="token operator">&lt;</span><span class="token operator">/</span>i<span class="token operator">></span>
+        本站总访问量 <span class="token operator">&lt;</span>span id<span class="token operator">=</span><span class="token string">"busuanzi_value_site_pv"</span> <span class="token keyword">class</span><span class="token operator">=</span><span class="token string">"white-color"</span><span class="token operator">></span><span class="token operator">&lt;</span><span class="token operator">/</span>span<span class="token operator">></span>
+
+<span class="token operator">&lt;</span><span class="token operator">%</span> <span class="token punctuation">}</span> <span class="token operator">%</span><span class="token operator">></span>
+
+<span class="token operator">&lt;</span><span class="token operator">%</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>theme<span class="token punctuation">.</span>busuanziStatistics <span class="token operator">&amp;&amp;</span> theme<span class="token punctuation">.</span>busuanziStatistics<span class="token punctuation">.</span>totalNumberOfvisitors<span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token operator">%</span><span class="token operator">></span>
+    <span class="token operator">&lt;</span>span id<span class="token operator">=</span><span class="token string">"busuanzi_container_site_uv"</span> style<span class="token operator">=</span><span class="token string">'display:none'</span><span class="token operator">></span><span class="token operator">&lt;</span><span class="token operator">/</span>span<span class="token operator">></span>
+        人次<span class="token punctuation">,</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span>访客数 <span class="token operator">&lt;</span>span id<span class="token operator">=</span><span class="token string">"busuanzi_value_site_uv"</span> <span class="token keyword">class</span><span class="token operator">=</span><span class="token string">"white-color"</span><span class="token operator">></span><span class="token operator">&lt;</span><span class="token operator">/</span>span<span class="token operator">></span> 人<span class="token punctuation">.</span>
+
+<span class="token operator">&lt;</span><span class="token operator">%</span> <span class="token punctuation">}</span> <span class="token operator">%</span><span class="token operator">></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>变化就在下面两句，将源代码对应字段后面的＜/span＞写在前面了。</p>
+<pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token operator">&lt;</span>span id<span class="token operator">=</span><span class="token string">"busuanzi_container_site_pv"</span> style<span class="token operator">=</span><span class="token string">'display:none'</span><span class="token operator">></span><span class="token operator">&lt;</span><span class="token operator">/</span>span<span class="token operator">></span>
+<span class="token operator">&lt;</span>span id<span class="token operator">=</span><span class="token string">"busuanzi_container_site_uv"</span> style<span class="token operator">=</span><span class="token string">'display:none'</span><span class="token operator">></span><span class="token operator">&lt;</span><span class="token operator">/</span>span<span class="token operator">></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<blockquote>
+<p>发现按照上面改了过后，又出现一个新bug：文章头部的阅读次数不显示了，解决办法：<br>打开<code>themes\matery\layout\_partial</code>中的<code>post-detail.ejs</code>，找到对应代码字段：</p>
+</blockquote>
+<pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token operator">&lt;</span><span class="token operator">%</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>theme<span class="token punctuation">.</span>busuanziStatistics <span class="token operator">&amp;&amp;</span> theme<span class="token punctuation">.</span>busuanziStatistics<span class="token punctuation">.</span>enable<span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token operator">%</span><span class="token operator">></span>
+    <span class="token operator">&lt;</span>div id<span class="token operator">=</span><span class="token string">"busuanzi_container_page_pv"</span> <span class="token keyword">class</span><span class="token operator">=</span><span class="token string">"info-break-policy"</span><span class="token operator">></span>
+        <span class="token operator">&lt;</span>i <span class="token keyword">class</span><span class="token operator">=</span><span class="token string">"fa fa-eye fa-fw"</span><span class="token operator">></span><span class="token operator">&lt;</span><span class="token operator">/</span>i<span class="token operator">></span><span class="token operator">&lt;</span><span class="token operator">%</span><span class="token operator">-</span> <span class="token function">__</span><span class="token punctuation">(</span><span class="token string">'readCount'</span><span class="token punctuation">)</span> <span class="token operator">%</span><span class="token operator">></span><span class="token punctuation">:</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span>
+        <span class="token operator">&lt;</span>span id<span class="token operator">=</span><span class="token string">"busuanzi_value_page_pv"</span> <span class="token operator">></span><span class="token operator">&lt;</span><span class="token operator">/</span>span<span class="token operator">></span>
+    <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span>
+
+<span class="token operator">&lt;</span><span class="token operator">%</span> <span class="token punctuation">}</span> <span class="token operator">%</span><span class="token operator">></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>修改为下面的就可以了：</p>
+<pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token operator">&lt;</span><span class="token operator">%</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>theme<span class="token punctuation">.</span>busuanziStatistics <span class="token operator">&amp;&amp;</span> theme<span class="token punctuation">.</span>busuanziStatistics<span class="token punctuation">.</span>enable<span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token operator">%</span><span class="token operator">></span>
+        <span class="token operator">&lt;</span>span id<span class="token operator">=</span><span class="token string">"busuanzi_container_site_pv"</span> style<span class="token operator">=</span><span class="token string">'display:none'</span><span class="token operator">></span><span class="token operator">&lt;</span><span class="token operator">/</span>span<span class="token operator">></span>
+        <span class="token operator">&lt;</span>i <span class="token keyword">class</span><span class="token operator">=</span><span class="token string">"fa fa-eye fa-fw"</span><span class="token operator">></span><span class="token operator">&lt;</span><span class="token operator">/</span>i<span class="token operator">></span><span class="token operator">&lt;</span><span class="token operator">%</span><span class="token operator">-</span> <span class="token function">__</span><span class="token punctuation">(</span><span class="token string">'readCount'</span><span class="token punctuation">)</span> <span class="token operator">%</span><span class="token operator">></span><span class="token punctuation">:</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span>
+        <span class="token operator">&lt;</span>span id<span class="token operator">=</span><span class="token string">"busuanzi_value_page_pv"</span> <span class="token operator">></span><span class="token operator">&lt;</span><span class="token operator">/</span>span<span class="token operator">></span>
+
+<span class="token operator">&lt;</span><span class="token operator">%</span> <span class="token punctuation">}</span> <span class="token operator">%</span><span class="token operator">></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="添加博客趣味标题"><a href="#添加博客趣味标题" class="headerlink" title="添加博客趣味标题"></a>添加博客趣味标题</h3><p>打开博客主题文件夹，路径：<code>themes/matery/layout/layout.ejs</code>，在对应位置添加如下代码：</p>
+<pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token operator">&lt;</span>script type<span class="token operator">=</span><span class="token string">"text/javascript"</span><span class="token operator">></span>
+    <span class="token keyword">var</span> OriginTitile <span class="token operator">=</span> document<span class="token punctuation">.</span>title<span class="token punctuation">,</span>
+        st<span class="token punctuation">;</span>
+    document<span class="token punctuation">.</span><span class="token function">addEventListener</span><span class="token punctuation">(</span><span class="token string">"visibilitychange"</span><span class="token punctuation">,</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        document<span class="token punctuation">.</span>hidden <span class="token operator">?</span> <span class="token punctuation">(</span>document<span class="token punctuation">.</span>title <span class="token operator">=</span> <span class="token string">"看不见我🙈~看不见我🙈~"</span><span class="token punctuation">,</span> <span class="token function">clearTimeout</span><span class="token punctuation">(</span>st<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">:</span> <span class="token punctuation">(</span>document<span class="token punctuation">.</span>title <span class="token operator">=</span>
+            <span class="token string">"(๑•̀ㅂ•́) ✧被发现了～"</span><span class="token punctuation">,</span> st <span class="token operator">=</span> <span class="token function">setTimeout</span><span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                document<span class="token punctuation">.</span>title <span class="token operator">=</span> OriginTitile
+            <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token number">3e3</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="添加博客天气插件"><a href="#添加博客天气插件" class="headerlink" title="添加博客天气插件"></a>添加博客天气插件</h3><p>去中国天气网：<a href="https://cj.weather.com.cn/plugin/pc" target="_blank" rel="noopener">传送门</a></p>
+<p>选择自定义插件—&gt;自定义样式——&gt;生成代码，然后会生成这样一段代码:</p>
+<pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token operator">&lt;</span><span class="token operator">!</span><span class="token operator">--</span> Weather Widget <span class="token operator">--</span><span class="token operator">></span> 
+<span class="token operator">&lt;</span>script type<span class="token operator">=</span><span class="token string">"text/javascript"</span><span class="token operator">></span>
+    WIDGET <span class="token operator">=</span> <span class="token punctuation">{</span>FID<span class="token punctuation">:</span> <span class="token string">'your FID'</span><span class="token punctuation">}</span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">></span>
+<span class="token operator">&lt;</span>script type<span class="token operator">=</span><span class="token string">"text/javascript"</span> src<span class="token operator">=</span><span class="token string">"https://apip.weatherdt.com/float/static/js/r.js?v=1111"</span><span class="token operator">></span><span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>将其插入<code>/themes/matery/layout/layout.ejs</code>就可以了</p>
+<h3 id="修改社交链接"><a href="#修改社交链接" class="headerlink" title="修改社交链接"></a>修改社交链接</h3><p>主页banner图中显示的社交链接与底部的社交链接是同步修改的，打开主题配置文件，将社交链接信息修改为你的信息。修改如下:</p>
+<pre class="line-numbers language-yaml"><code class="language-yaml"><span class="token comment" spellcheck="true"># 首页 banner 中的第二行个人信息配置，留空即不启用</span>
+<span class="token key atrule">socialLink</span><span class="token punctuation">:</span>
+  <span class="token key atrule">github</span><span class="token punctuation">:</span>  https<span class="token punctuation">:</span>//github.com/blinkfox
+  <span class="token key atrule">email</span><span class="token punctuation">:</span> 1181062873@qq.com
+  <span class="token key atrule">facebook</span><span class="token punctuation">:</span> <span class="token comment" spellcheck="true"># https://www.facebook.com/xxx</span>
+  <span class="token key atrule">twitter</span><span class="token punctuation">:</span> <span class="token comment" spellcheck="true"># https://twitter.com/xxx</span>
+  <span class="token key atrule">qq</span><span class="token punctuation">:</span> <span class="token number">1181062873</span>
+  <span class="token key atrule">weibo</span><span class="token punctuation">:</span> <span class="token comment" spellcheck="true"># https://weibo.com/xxx</span>
+  <span class="token key atrule">zhihu</span><span class="token punctuation">:</span> <span class="token comment" spellcheck="true"># https://www.zhihu.com/xxx</span>
+  <span class="token key atrule">rss</span><span class="token punctuation">:</span> <span class="token boolean important">true </span><span class="token comment" spellcheck="true"># true、false</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>首页 banner 中的第二个按钮的配置改为：</p>
+<pre class="line-numbers language-yaml"><code class="language-yaml"><span class="token key atrule">indexbtn</span><span class="token punctuation">:</span>
+  <span class="token key atrule">enable</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+  <span class="token key atrule">name</span><span class="token punctuation">:</span> Github
+  <span class="token key atrule">icon</span><span class="token punctuation">:</span> fab fa<span class="token punctuation">-</span>github<span class="token punctuation">-</span>alt
+  <span class="token key atrule">url</span><span class="token punctuation">:</span>  <span class="token comment" spellcheck="true"># your github ,like https://github.com/yourname</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="去掉banner图的动态滤镜颜色并修改导航栏颜色"><a href="#去掉banner图的动态滤镜颜色并修改导航栏颜色" class="headerlink" title="去掉banner图的动态滤镜颜色并修改导航栏颜色"></a>去掉banner图的动态滤镜颜色并修改导航栏颜色</h3><p>打开<code>themes/matery/source/css/matery.css</code>文件，查找下面的代码块，然后将其注释即可。如下：</p>
+<pre class="line-numbers language-css"><code class="language-css"><span class="token selector"><span class="token class">.bg-cover</span><span class="token pseudo-element">:after</span> </span><span class="token punctuation">{</span>
+    <span class="token property">-webkit-animation</span><span class="token punctuation">:</span> rainbow <span class="token number">60</span>s infinite<span class="token punctuation">;</span>
+    <span class="token property">animation</span><span class="token punctuation">:</span> rainbow <span class="token number">60</span>s infinite<span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<p>或者是找到如下代码，将其注释掉即可：</p>
+<pre class="line-numbers language-css"><code class="language-css">
+<span class="token comment" spellcheck="true">/*如果想去掉banner图的颜色渐变效果，请将以下的css属性注释掉或者删除掉即可*/</span>
+<span class="token atrule"><span class="token rule">@-webkit-keyframes</span> rainbow</span> <span class="token punctuation">{</span>
+   <span class="token comment" spellcheck="true">/* 动态切换背景颜色. */</span>
+<span class="token punctuation">}</span>
+<span class="token atrule"><span class="token rule">@keyframes</span> rainbow</span> <span class="token punctuation">{</span>
+    <span class="token comment" spellcheck="true">/* 动态切换背景颜色. */</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h4 id="修改导航栏颜色及透明效果"><a href="#修改导航栏颜色及透明效果" class="headerlink" title="修改导航栏颜色及透明效果"></a>修改导航栏颜色及透明效果</h4><p>打开<code>themes/matery/source/css/matery.css</code>文件，大约在250行，有一个<code>.bg-color</code>属性，修改其属性值即可，代码如下：</p>
+<pre class="line-numbers language-css"><code class="language-css"><span class="token selector"><span class="token class">.bg-color</span> </span><span class="token punctuation">{</span>
+    <span class="token property">background-image</span><span class="token punctuation">:</span> <span class="token function">linear-gradient</span><span class="token punctuation">(</span>to right, <span class="token hexcode">#4cbf30</span> <span class="token number">0%</span>, <span class="token hexcode">#0f9d58</span> <span class="token number">100%</span><span class="token punctuation">)</span><span class="token punctuation">;</span> //修改成自己喜欢的颜色值
+    <span class="token property">opacity</span><span class="token punctuation">:</span> <span class="token number">0.8</span><span class="token punctuation">;</span>  //透明效果 值范围 <span class="token number">0</span>~<span class="token number">1</span>，看情况自己修改
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="添加首页动态打字效果副标题"><a href="#添加首页动态打字效果副标题" class="headerlink" title="添加首页动态打字效果副标题"></a>添加首页动态打字效果副标题</h3><p>在主题配置文件中，找到下面的配置：</p>
+<pre class="line-numbers language-yaml"><code class="language-yaml"><span class="token comment" spellcheck="true"># 网站副标题，打字效果</span>
+<span class="token comment" spellcheck="true"># 如果有符号 ‘ ，请在 ’ 前面加上 \</span>
+<span class="token key atrule">subtitle</span><span class="token punctuation">:</span> 
+  <span class="token key atrule">enable</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+  <span class="token key atrule">loop</span><span class="token punctuation">:</span> <span class="token boolean important">true </span><span class="token comment" spellcheck="true"># 是否循环</span>
+  <span class="token key atrule">showCursor</span><span class="token punctuation">:</span> <span class="token boolean important">true </span><span class="token comment" spellcheck="true"># 是否显示光标</span>
+  <span class="token key atrule">startDelay</span><span class="token punctuation">:</span> <span class="token number">300 </span><span class="token comment" spellcheck="true"># 开始延迟</span>
+  <span class="token key atrule">typeSpeed</span><span class="token punctuation">:</span> <span class="token number">100 </span><span class="token comment" spellcheck="true"># 打字速度</span>
+  <span class="token key atrule">backSpeed</span><span class="token punctuation">:</span> <span class="token number">50 </span><span class="token comment" spellcheck="true"># 删除速度</span>
+  <span class="token key atrule">sub1</span><span class="token punctuation">:</span> ……
+  <span class="token key atrule">sub2</span><span class="token punctuation">:</span> ……<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>网站打字效果副标题默认有两个，即<code>sub1</code>和<code>sub2</code>，如果想写多个，则需要修改两处地方，首先修改配置文件，如上面所示，在<code>sub1</code>和<code>sub2</code>后面继续添加即可，然后在去主题目录下的<code>layout</code>文件夹下的<code>_partial</code>文件夹，<br>修改<code>bg-cover-content.ejs</code>文件，大约在12行左右，如下面所示：</p>
+<pre class="line-numbers language-javascript"><code class="language-javascript"> <span class="token operator">&lt;</span>div <span class="token keyword">class</span><span class="token operator">=</span><span class="token string">"description center-align"</span><span class="token operator">></span>
+     <span class="token operator">&lt;</span><span class="token operator">%</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>theme<span class="token punctuation">.</span>subtitle<span class="token punctuation">.</span>enable<span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token operator">%</span><span class="token operator">></span>
+         <span class="token operator">&lt;</span>span id<span class="token operator">=</span><span class="token string">"subtitle"</span><span class="token operator">></span><span class="token operator">&lt;</span><span class="token operator">/</span>span<span class="token operator">></span>
+         <span class="token operator">&lt;</span>script src<span class="token operator">=</span><span class="token string">"https://cdn.jsdelivr.net/npm/typed.js@2.0.11"</span><span class="token operator">></span><span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">></span>
+        <span class="token operator">&lt;</span>script<span class="token operator">></span>
+            <span class="token keyword">var</span> typed <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Typed</span><span class="token punctuation">(</span><span class="token string">"#subtitle"</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+                strings<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">'&lt;%= theme.subtitle.sub1 %>'</span><span class="token punctuation">,</span>
+                          <span class="token string">'&lt;%= theme.subtitle.sub2 %>'</span><span class="token punctuation">,</span>
+                          <span class="token string">'&lt;%= theme.subtitle.sub3 %>'</span><span class="token punctuation">,</span>  <span class="token comment" spellcheck="true">/* 此处添加类似于'&lt;%= theme.subtitle.sub2 %>',的代码 */</span>
+                 startDelay<span class="token punctuation">:</span> <span class="token operator">&lt;</span><span class="token operator">%</span><span class="token operator">=</span> theme<span class="token punctuation">.</span>subtitle<span class="token punctuation">.</span>startDelay <span class="token operator">%</span><span class="token operator">></span><span class="token punctuation">,</span>
+                 typeSpeed<span class="token punctuation">:</span> <span class="token operator">&lt;</span><span class="token operator">%</span><span class="token operator">=</span> theme<span class="token punctuation">.</span>subtitle<span class="token punctuation">.</span>typeSpeed <span class="token operator">%</span><span class="token operator">></span><span class="token punctuation">,</span>
+                 loop<span class="token punctuation">:</span> <span class="token operator">&lt;</span><span class="token operator">%</span><span class="token operator">=</span> theme<span class="token punctuation">.</span>subtitle<span class="token punctuation">.</span>loop <span class="token operator">%</span><span class="token operator">></span><span class="token punctuation">,</span>   
+                 backSpeed<span class="token punctuation">:</span> <span class="token operator">&lt;</span><span class="token operator">%</span><span class="token operator">=</span> theme<span class="token punctuation">.</span>subtitle<span class="token punctuation">.</span>backSpeed <span class="token operator">%</span><span class="token operator">></span><span class="token punctuation">,</span>
+                 showCursor<span class="token punctuation">:</span> <span class="token operator">&lt;</span><span class="token operator">%</span><span class="token operator">=</span> theme<span class="token punctuation">.</span>subtitle<span class="token punctuation">.</span>showCursor <span class="token operator">%</span><span class="token operator">></span>
+              <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+          <span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">></span>
+      <span class="token operator">&lt;</span><span class="token operator">%</span> <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span> <span class="token operator">%</span><span class="token operator">></span>
+            <span class="token operator">&lt;</span><span class="token operator">%</span><span class="token operator">=</span> config<span class="token punctuation">.</span>description <span class="token operator">%</span><span class="token operator">></span>
+      <span class="token operator">&lt;</span><span class="token operator">%</span> <span class="token punctuation">}</span> <span class="token operator">%</span><span class="token operator">></span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="添加动态诗词"><a href="#添加动态诗词" class="headerlink" title="添加动态诗词"></a>添加动态诗词</h3><p>采用的是今日诗词，每次返回一句诗词，根据时间、地点、天气、事件智能推荐。官网有<a href="https://www.jinrishici.com/doc/" target="_blank" rel="noopener">API文档</a>，<br>可以去看一下，有多种安装方式，最简单的方式就是从官网获取代码，<br>在<code>/themes/matery/layout/_partial/head.ejs</code>添加下面的一行代码：</p>
+<pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token operator">&lt;</span>script src<span class="token operator">=</span><span class="token string">"https://sdk.jinrishici.com/v2/browser/jinrishici.js"</span> charset<span class="token operator">=</span><span class="token string">"utf-8"</span><span class="token operator">></span><span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">></span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>然后再将<code>/themes/matery/layout/_partial/bg-cover-content.ejs</code>中的<code>&lt;%= config.description %&gt;</code>修改为<br><code>&lt;%- '&lt;span id="jinrishici-sentence"&gt;正在加载今日诗词....&lt;/span&gt;' %&gt;</code>，最后将主题配置文件的<code>subtitle</code>的值改为<code>false</code>。</p>
+<h3 id="自定义鼠标样式"><a href="#自定义鼠标样式" class="headerlink" title="自定义鼠标样式"></a>自定义鼠标样式</h3><blockquote>
+<p>建议大家下载鼠标指针样式的格式为ico格式，大小为16 x 16，或者24 x 24的。<br>将鼠标指针样式放在了主题文件夹下的<code>source/medias</code>目录下，然后打开主题文件夹下的<code>source/css/my.css</code>文件，在末尾添加如下内容：</p>
+</blockquote>
+<pre class="line-numbers language-css"><code class="language-css"><span class="token selector">*</span><span class="token punctuation">{</span>
+    <span class="token property">cursor</span><span class="token punctuation">:</span> <span class="token url">url("/medias/cursor1.ico")</span>,auto!important<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector"><span class="token pseudo-class">:active</span></span><span class="token punctuation">{</span>
+    <span class="token property">cursor</span><span class="token punctuation">:</span> <span class="token url">url("/medias/cursor2.ico")</span>,auto!important<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="添加说说页面"><a href="#添加说说页面" class="headerlink" title="添加说说页面"></a>添加说说页面</h3><h4 id="leancloud的相关准备"><a href="#leancloud的相关准备" class="headerlink" title="leancloud的相关准备"></a>leancloud的相关准备</h4><blockquote>
+<p>🌍 使用国际版的leancloud</p>
+</blockquote>
+<p>因为<code>leancloud</code>的国内节点需要接入备案域名作为安全域名。明显违背了适用性强的理念。这里推荐大家使用国际版，当然国内版的也可以，但是不要忘了填写<code>severurl</code>即可。</p>
+<ol>
+<li>前往<code>leancloud</code>国际版，注册账号。</li>
+<li>注册完成之后根据<code>leancloud</code>的提示绑定手机号和邮箱。</li>
+<li>绑定完成之后点击创建应用，应用名称随意，接着在结构化数据中创建<code>class</code>，命名为<code>shuoshuo</code>。</li>
+<li>在你新建的应用中找到<code>结构化数据下</code>的<code>用户</code>。点击<code>添加用户</code>，输入想用的用户名及密码。</li>
+<li>回到<code>结构化数据</code>中，点击<code>class</code>下的<code>shuoshuo</code>。找到权限，在<code>Class</code>访问权限中将<code>add_fields</code>以及<code>create</code>权限设置为指定用户，输入你刚才输入的用户名会自动匹配。为了安全起见，将<code>delete</code>和<code>update</code>也设置为跟它们一样的权限。</li>
+<li>点击<code>class</code>下的<code>_User</code>添加列，列名称为<code>img</code>，默认值填上你这个账号想要用的头像<code>url</code>，这一项不进行配置，说说头像会显示为默认头像——<code>Artitalk的logo</code>。</li>
+<li>在最菜单栏中找到设置-&gt;应用keys，记下来AppID和AppKey，一会会用。</li>
+<li>最后将<code>_User</code>中的权限全部调为指定用户，或者数据创建者，为了保证不被篡改用户数据已达到强制发布说说。</li>
+<li>因为<code>leancloud</code>功能的限制。若想同时使用<code>valine</code>和<code>artitalk</code>，请在<code>class</code>中添加名为<code>Comment</code>的<code>class</code>。不推荐在存储<code>valine</code>的应用中新建名为<code>shuoshuo</code>的<code>class</code>，可能会出现神奇的<code>bug</code>。</li>
+</ol>
+<blockquote>
+<p>❗ 关于设置权限的这几步<br>这几步一定要设置好，才可以保证不被“闲人”破解发布说说的验证</p>
+</blockquote>
+<h4 id="新建页面"><a href="#新建页面" class="headerlink" title="新建页面"></a>新建页面</h4><p>新建页面</p>
+<pre class="line-numbers language-bash"><code class="language-bash">hexo new page <span class="token string">"artitalk"</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>写入</p>
+<pre class="line-numbers language-yaml"><code class="language-yaml"><span class="token punctuation">---</span>
+<span class="token key atrule">title</span><span class="token punctuation">:</span> artitalk
+<span class="token key atrule">date</span><span class="token punctuation">:</span> <span class="token datetime number">2020-07-02 19:14:51</span>
+<span class="token key atrule">layout</span><span class="token punctuation">:</span> artitalk
+<span class="token punctuation">---</span>
+&lt;script src="https<span class="token punctuation">:</span>//libs.baidu.com/jquery/2.0.0/jquery.min.js"<span class="token punctuation">></span>&lt;/script<span class="token punctuation">></span>
+&lt;body<span class="token punctuation">></span>
+    <span class="token punctuation">{</span>% raw %<span class="token punctuation">}</span>
+    &lt;script<span class="token punctuation">></span>
+    var appID=""; 
+    var appKEY="";
+    &lt;/script<span class="token punctuation">></span>
+    <span class="token punctuation">{</span>% endraw %<span class="token punctuation">}</span>
+    &lt;div id="artitalk_main"<span class="token punctuation">></span>&lt;/div<span class="token punctuation">></span>
+    &lt;script type="text/javascript" src="https<span class="token punctuation">:</span>//unpkg.com/artitalk"<span class="token punctuation">></span>&lt;/script<span class="token punctuation">></span>
+&lt;/body<span class="token punctuation">></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>然后在<code>/themes/matery/layout/</code>目录下新建一个<code>aritalk.ejs</code>文件，内容如下：</p>
+<pre class="line-numbers language-html"><code class="language-html">&lt;%- partial('_partial/bg-cover') %>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>main</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>content<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>artitalk<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>container chip-container<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>card<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>card-artitalk<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>tag-title center-align<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>i</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>fas fa-comment-dots<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>i</span><span class="token punctuation">></span></span><span class="token entity" title="&nbsp;">&amp;nbsp;</span><span class="token entity" title="&nbsp;">&amp;nbsp;</span>&lt;%= __('artitalk') %>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>%-</span> <span class="token attr-name">page.content</span> <span class="token attr-name">%</span><span class="token punctuation">></span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>main</span><span class="token punctuation">></span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="JsDelivr加速文章图片"><a href="#JsDelivr加速文章图片" class="headerlink" title="JsDelivr加速文章图片"></a>JsDelivr加速文章图片</h3><p>在<code>/source/js/others/</code>新建<code>jsdelivr.js</code>：</p>
+<pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">var</span> name <span class="token operator">=</span> <span class="token string">"BlueSky01st"</span><span class="token punctuation">;</span>
+<span class="token keyword">var</span> repository <span class="token operator">=</span> <span class="token string">"bluesky01st.github.io"</span><span class="token punctuation">;</span>
+<span class="token keyword">if</span><span class="token punctuation">(</span>document<span class="token punctuation">.</span>domain <span class="token operator">!=</span> <span class="token string">'localhost'</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">var</span> key <span class="token keyword">in</span> document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">"articleContent"</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">getElementsByTagName</span><span class="token punctuation">(</span><span class="token string">'img'</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token function">isNaN</span><span class="token punctuation">(</span>key<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+            <span class="token keyword">break</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">"articleContent"</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">getElementsByTagName</span><span class="token punctuation">(</span><span class="token string">'img'</span><span class="token punctuation">)</span><span class="token punctuation">[</span>key<span class="token punctuation">]</span><span class="token punctuation">.</span>src <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">"articleContent"</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">getElementsByTagName</span><span class="token punctuation">(</span><span class="token string">'img'</span><span class="token punctuation">)</span><span class="token punctuation">[</span>key<span class="token punctuation">]</span><span class="token punctuation">.</span>src<span class="token punctuation">.</span><span class="token function">replace</span><span class="token punctuation">(</span>document<span class="token punctuation">.</span>domain<span class="token punctuation">,</span><span class="token string">"cdn.jsdelivr.net/gh/"</span> <span class="token operator">+</span> name <span class="token operator">+</span> <span class="token string">"/"</span> <span class="token operator">+</span> repository<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>把第一行的<code>name</code>和第二行的<code>repository</code>的值改为你的就行了。</p>
+<h2 id="博客支持PWA"><a href="#博客支持PWA" class="headerlink" title="博客支持PWA"></a>博客支持PWA</h2><p>安装插件:</p>
+<pre class="line-numbers language-bash"><code class="language-bash"><span class="token function">npm</span> <span class="token function">install</span> hexo-offline<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>在博客根目录<code>_config.yml</code>中新增:</p>
+<pre class="line-numbers language-yaml"><code class="language-yaml"><span class="token comment" spellcheck="true"># Offline</span>
+<span class="token comment" spellcheck="true">## Config passed to sw-precache</span>
+<span class="token comment" spellcheck="true">## https://github.com/JLHwung/hexo-offline</span>
+<span class="token key atrule">offline</span><span class="token punctuation">:</span>
+  <span class="token key atrule">maximumFileSizeToCacheInBytes</span><span class="token punctuation">:</span> <span class="token number">52428800</span>
+  <span class="token key atrule">staticFileGlobs</span><span class="token punctuation">:</span>
+    <span class="token punctuation">-</span> public/**/*.<span class="token punctuation">{</span>js<span class="token punctuation">,</span>html<span class="token punctuation">,</span>css<span class="token punctuation">,</span>png<span class="token punctuation">,</span>jpg<span class="token punctuation">,</span>gif<span class="token punctuation">,</span>svg<span class="token punctuation">,</span>eot<span class="token punctuation">,</span>ttf<span class="token punctuation">,</span>woff<span class="token punctuation">,</span>woff2<span class="token punctuation">,</span>json<span class="token punctuation">}</span>
+  <span class="token key atrule">stripPrefix</span><span class="token punctuation">:</span> public
+  <span class="token key atrule">verbose</span><span class="token punctuation">:</span> <span class="token boolean important">true</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>准备<code>36x36</code>,<code>48x48</code>,<code>72x72</code>,<code>96x96</code>,<code>128x128</code>,<code>512x512</code>的图片各一张放在<code>themes/matery/source/medias</code>中</p>
+<blockquote>
+<p>可以在<a href="https://www.iloveimg.com/resize-image" target="_blank" rel="noopener">https://www.iloveimg.com/resize-image</a> 中修改图片尺寸</p>
+</blockquote>
+<p>在<code>themes/matery/source</code>新建<code>manifest,json</code>,写入:</p>
+<pre class="line-numbers language-json"><code class="language-json"><span class="token punctuation">{</span>
+    <span class="token property">"name"</span><span class="token operator">:</span> <span class="token string">"BlueSky01st's Blog"</span><span class="token punctuation">,</span> 
+    <span class="token property">"short_name"</span><span class="token operator">:</span> <span class="token string">"BlueSky01st's Blog"</span><span class="token punctuation">,</span> 
+    <span class="token property">"theme_color"</span><span class="token operator">:</span> <span class="token string">"#fff"</span><span class="token punctuation">,</span> 
+    <span class="token property">"background_color"</span><span class="token operator">:</span> <span class="token string">"#4995b1"</span><span class="token punctuation">,</span>
+    <span class="token property">"display"</span><span class="token operator">:</span> <span class="token string">"standalone"</span><span class="token punctuation">,</span>
+    <span class="token property">"scope"</span><span class="token operator">:</span> <span class="token string">"/"</span><span class="token punctuation">,</span>
+    <span class="token property">"start_url"</span><span class="token operator">:</span> <span class="token string">"/"</span><span class="token punctuation">,</span>
+    <span class="token property">"icons"</span><span class="token operator">:</span> <span class="token punctuation">[</span> 
+        <span class="token punctuation">{</span>
+          <span class="token property">"src"</span><span class="token operator">:</span> <span class="token string">"/medias/36.png"</span><span class="token punctuation">,</span>
+          <span class="token property">"sizes"</span><span class="token operator">:</span> <span class="token string">"36x36"</span><span class="token punctuation">,</span>
+          <span class="token property">"type"</span><span class="token operator">:</span> <span class="token string">"image/png"</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">"src"</span><span class="token operator">:</span> <span class="token string">"/medias/48.png"</span><span class="token punctuation">,</span>
+          <span class="token property">"sizes"</span><span class="token operator">:</span> <span class="token string">"48x48"</span><span class="token punctuation">,</span>
+          <span class="token property">"type"</span><span class="token operator">:</span> <span class="token string">"image/png"</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+          <span class="token property">"src"</span><span class="token operator">:</span> <span class="token string">"/medias/72.png"</span><span class="token punctuation">,</span>
+          <span class="token property">"sizes"</span><span class="token operator">:</span> <span class="token string">"72x72"</span><span class="token punctuation">,</span>
+          <span class="token property">"type"</span><span class="token operator">:</span> <span class="token string">"image/png"</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+          <span class="token property">"src"</span><span class="token operator">:</span> <span class="token string">"/medias/96.png"</span><span class="token punctuation">,</span>
+          <span class="token property">"sizes"</span><span class="token operator">:</span> <span class="token string">"96x96"</span><span class="token punctuation">,</span>
+          <span class="token property">"type"</span><span class="token operator">:</span> <span class="token string">"image/png"</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+          <span class="token property">"src"</span><span class="token operator">:</span> <span class="token string">"/medias/144.png"</span><span class="token punctuation">,</span>
+          <span class="token property">"sizes"</span><span class="token operator">:</span> <span class="token string">"144x144"</span><span class="token punctuation">,</span>
+          <span class="token property">"type"</span><span class="token operator">:</span> <span class="token string">"image/png"</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+          <span class="token property">"src"</span><span class="token operator">:</span> <span class="token string">"/medias/180.png"</span><span class="token punctuation">,</span>
+          <span class="token property">"sizes"</span><span class="token operator">:</span> <span class="token string">"180X180"</span><span class="token punctuation">,</span>
+          <span class="token property">"type"</span><span class="token operator">:</span> <span class="token string">"image/png"</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+          <span class="token property">"src"</span><span class="token operator">:</span> <span class="token string">"/medias/192.png"</span><span class="token punctuation">,</span>
+          <span class="token property">"sizes"</span><span class="token operator">:</span> <span class="token string">"192x192"</span><span class="token punctuation">,</span>
+          <span class="token property">"type"</span><span class="token operator">:</span> <span class="token string">"image/png"</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">"src"</span><span class="token operator">:</span> <span class="token string">"/medias/512.png"</span><span class="token punctuation">,</span>
+            <span class="token property">"sizes"</span><span class="token operator">:</span> <span class="token string">"512x512"</span><span class="token punctuation">,</span>
+            <span class="token property">"type"</span><span class="token operator">:</span> <span class="token string">"image/png"</span>
+          <span class="token punctuation">}</span>
+      <span class="token punctuation">]</span><span class="token punctuation">,</span>
+      <span class="token property">"splash_pages"</span><span class="token operator">:</span> <span class="token null">null</span>
+  <span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>把第二行和第三行的改成你的，再运行</p>
+<pre class="line-numbers language-bash"><code class="language-bash">hexo cl <span class="token operator">&amp;&amp;</span> hexo g<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<script>
+        document.querySelectorAll('.github-emoji')
+          .forEach(el => {
+            if (!el.dataset.src) { return; }
+            const img = document.createElement('img');
+            img.style = 'display:none !important;';
+            img.src = el.dataset.src;
+            img.addEventListener('error', () => {
+              img.remove();
+              el.style.color = 'inherit';
+              el.style.backgroundImage = 'none';
+              el.style.background = 'none';
+            });
+            img.addEventListener('load', () => {
+              img.remove();
+            });
+            document.body.appendChild(img);
+          });
+      </script>
+            </div>
+            <hr/>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        文章作者:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="/about" rel="external nofollow noreferrer">BlueSky01st</a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        文章链接:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="https://bluesky01st.js.org/posts/zi-ding-yi-matery-zhu-ti-jiao-cheng.html">https://bluesky01st.js.org/posts/zi-ding-yi-matery-zhu-ti-jiao-cheng.html</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        版权声明:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    本博客所有文章除特別声明外，均采用
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    许可协议。转载请注明来源
+                    <a href="/about" target="_blank">BlueSky01st</a>
+                    !
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>复制成功，请遵循本文的转载规则</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">查看</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            
+                                <a href="/tags/Hexo/">
+                                    <span class="chip bg-color">Hexo</span>
+                                </a>
+                            
+                                <a href="/tags/Blog/">
+                                    <span class="chip bg-color">Blog</span>
+                                </a>
+                            
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+    <div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <script src="/libs/share/js/social-share.min.js"></script>
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    
+        <link rel="stylesheet" href="/libs/gitalk/gitalk.css">
+<link rel="stylesheet" href="/css/my-gitalk.css">
+
+<div class="card gitalk-card" data-aos="fade-up">
+    <div class="comment_headling" style="font-size: 20px; font-weight: 700; position: relative; padding-left: 20px; top: 15px; padding-bottom: 5px;">
+        <i class="fas fa-comments fa-fw" aria-hidden="true"></i>
+        <span>评论</span>
+    </div>
+    <div id="gitalk-container" class="card-content"></div>
+</div>
+
+<script src="/libs/gitalk/gitalk.min.js"></script>
+<script>
+    let gitalk = new Gitalk({
+        clientID: '1250c54ff408e6302ff1',
+        clientSecret: 'bb0721b244003edfc30ee9ff9592e15764a191a9',
+        repo: 'bluesky01st.github.io',
+        owner: 'BlueSky01st',
+        admin: "BlueSky01st",
+        id: '2020-06-22T14-45-52',
+        distractionFreeMode: false  // Facebook-like distraction free mode
+    });
+
+    gitalk.render('gitalk-container');
+</script>
+
+    
+
+    
+
+    
+
+    
+
+    
+        <style>
+    .valine-card {
+        margin: 1.5rem auto;
+    }
+
+    .valine-card .card-content {
+        padding: 20px 20px 5px 20px;
+    }
+
+    #vcomments textarea {
+        box-sizing: border-box;
+        background: url("/medias/comment_bg.png") 100% 100% no-repeat;
+    }
+
+    #vcomments p {
+        margin: 2px 2px 10px;
+        font-size: 1.05rem;
+        line-height: 1.78rem;
+    }
+
+    #vcomments blockquote p {
+        text-indent: 0.2rem;
+    }
+
+    #vcomments a {
+        padding: 0 2px;
+        color: #4cbf30;
+        font-weight: 500;
+        text-decoration: none;
+    }
+
+    #vcomments img {
+        max-width: 100%;
+        height: auto;
+        cursor: pointer;
+    }
+
+    #vcomments ol li {
+        list-style-type: decimal;
+    }
+
+    #vcomments ol,
+    ul {
+        display: block;
+        padding-left: 2em;
+        word-spacing: 0.05rem;
+    }
+
+    #vcomments ul li,
+    ol li {
+        display: list-item;
+        line-height: 1.8rem;
+        font-size: 1rem;
+    }
+
+    #vcomments ul li {
+        list-style-type: disc;
+    }
+
+    #vcomments ul ul li {
+        list-style-type: circle;
+    }
+
+    #vcomments table, th, td {
+        padding: 12px 13px;
+        border: 1px solid #dfe2e5;
+    }
+
+    #vcomments table, th, td {
+        border: 0;
+    }
+
+    table tr:nth-child(2n), thead {
+        background-color: #fafafa;
+    }
+
+    #vcomments table th {
+        background-color: #f2f2f2;
+        min-width: 80px;
+    }
+
+    #vcomments table td {
+        min-width: 80px;
+    }
+
+    #vcomments h1 {
+        font-size: 1.85rem;
+        font-weight: bold;
+        line-height: 2.2rem;
+    }
+
+    #vcomments h2 {
+        font-size: 1.65rem;
+        font-weight: bold;
+        line-height: 1.9rem;
+    }
+
+    #vcomments h3 {
+        font-size: 1.45rem;
+        font-weight: bold;
+        line-height: 1.7rem;
+    }
+
+    #vcomments h4 {
+        font-size: 1.25rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    #vcomments h5 {
+        font-size: 1.1rem;
+        font-weight: bold;
+        line-height: 1.4rem;
+    }
+
+    #vcomments h6 {
+        font-size: 1rem;
+        line-height: 1.3rem;
+    }
+
+    #vcomments p {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+
+    #vcomments hr {
+        margin: 12px 0;
+        border: 0;
+        border-top: 1px solid #ccc;
+    }
+
+    #vcomments blockquote {
+        margin: 15px 0;
+        border-left: 5px solid #42b983;
+        padding: 1rem 0.8rem 0.3rem 0.8rem;
+        color: #666;
+        background-color: rgba(66, 185, 131, .1);
+    }
+
+    #vcomments pre {
+        font-family: monospace, monospace;
+        padding: 1.2em;
+        margin: .5em 0;
+        background: #272822;
+        overflow: auto;
+        border-radius: 0.3em;
+        tab-size: 4;
+    }
+
+    #vcomments code {
+        font-family: monospace, monospace;
+        padding: 1px 3px;
+        font-size: 0.92rem;
+        color: #e96900;
+        background-color: #f8f8f8;
+        border-radius: 2px;
+    }
+
+    #vcomments pre code {
+        font-family: monospace, monospace;
+        padding: 0;
+        color: #e8eaf6;
+        background-color: #272822;
+    }
+
+    #vcomments pre[class*="language-"] {
+        padding: 1.2em;
+        margin: .5em 0;
+    }
+
+    #vcomments code[class*="language-"],
+    pre[class*="language-"] {
+        color: #e8eaf6;
+    }
+
+    #vcomments [type="checkbox"]:not(:checked), [type="checkbox"]:checked {
+        position: inherit;
+        margin-left: -1.3rem;
+        margin-right: 0.4rem;
+        margin-top: -1px;
+        vertical-align: middle;
+        left: unset;
+        visibility: visible;
+    }
+
+    #vcomments b,
+    strong {
+        font-weight: bold;
+    }
+
+    #vcomments dfn {
+        font-style: italic;
+    }
+
+    #vcomments small {
+        font-size: 85%;
+    }
+
+    #vcomments cite {
+        font-style: normal;
+    }
+
+    #vcomments mark {
+        background-color: #fcf8e3;
+        padding: .2em;
+    }
+
+    #vcomments table, th, td {
+        padding: 12px 13px;
+        border: 1px solid #dfe2e5;
+    }
+
+    table tr:nth-child(2n), thead {
+        background-color: #fafafa;
+    }
+
+    #vcomments table th {
+        background-color: #f2f2f2;
+        min-width: 80px;
+    }
+
+    #vcomments table td {
+        min-width: 80px;
+    }
+
+    #vcomments [type="checkbox"]:not(:checked), [type="checkbox"]:checked {
+        position: inherit;
+        margin-left: -1.3rem;
+        margin-right: 0.4rem;
+        margin-top: -1px;
+        vertical-align: middle;
+        left: unset;
+        visibility: visible;
+    }
+</style>
+
+<div class="card valine-card" data-aos="fade-up">
+    <div class="comment_headling" style="font-size: 20px; font-weight: 700; position: relative; padding-left: 20px; top: 15px; padding-bottom: 5px;">
+        <i class="fas fa-comments fa-fw" aria-hidden="true"></i>
+        <span>评论</span>
+    </div>
+    <div id="vcomments" class="card-content" style="display: grid">
+    </div>
+</div>
+
+<script src="/libs/valine/av-min.js"></script>
+<script src="/libs/valine/Valine.min.js"></script>
+<script>
+    new Valine({
+        el: '#vcomments',
+        appId: 'AzISV69yUfSf48a8f2y1USTK-MdYXbMMI',
+        appKey: 'fngUXj9JRmVrDhqVQgq5VgLj',
+        notify: 'false' === 'true',
+        verify: 'false' === 'true',
+        visitor: 'true' === 'true',
+        avatar: 'mm',
+        pageSize: '10',
+        lang: 'zh-cn',
+        placeholder: 'write something'
+    });
+</script>
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+            <div class="card">
+                <a href="/posts/markdown-emoji-yu-fa.html">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/21.jpg" class="responsive-img" alt="Markdown Emoji速查">
+                        
+                        <span class="card-title">Markdown Emoji速查</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            Markdown Emoji语法速查
+                        
+                    </div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2020-07-19
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/Markdown/" class="post-category">
+                                    Markdown
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/Markdown/">
+                        <span class="chip bg-color">Markdown</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/posts/live2d-kan-ban-niang-bilibili-2233.html">
+                    <div class="card-image">
+                        
+                        <img src="https://s1.ax1x.com/2020/06/12/tOxxlq.png" class="responsive-img" alt="Live2D看板娘(bilibili-2233)">
+                        
+                        <span class="card-title">Live2D看板娘(bilibili-2233)</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            为你的Hexo博客添加一个看板娘~
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-06-12
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            BlueSky01st
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/Hexo/">
+                        <span class="chip bg-color">Hexo</span>
+                    </a>
+                    
+                    <a href="/tags/Blog/">
+                        <span class="chip bg-color">Blog</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+<script>
+    $('#articleContent').on('copy', function (e) {
+        // IE8 or earlier browser is 'undefined'
+        if (typeof window.getSelection === 'undefined') return;
+
+        var selection = window.getSelection();
+        // if the selection is short let's not annoy our users.
+        if (('' + selection).length < Number.parseInt('150')) {
+            return;
+        }
+
+        // create a div outside of the visible area and fill it with the selected text.
+        var bodyElement = document.getElementsByTagName('body')[0];
+        var newdiv = document.createElement('div');
+        newdiv.style.position = 'absolute';
+        newdiv.style.left = '-99999px';
+        bodyElement.appendChild(newdiv);
+        newdiv.appendChild(selection.getRangeAt(0).cloneContents());
+
+        // we need a <pre> tag workaround.
+        // otherwise the text inside "pre" loses all the line breaks!
+        if (selection.getRangeAt(0).commonAncestorContainer.nodeName === 'PRE') {
+            newdiv.innerHTML = "<pre>" + newdiv.innerHTML + "</pre>";
+        }
+
+        var url = document.location.href;
+        newdiv.innerHTML += '<br />'
+            + '来源: BlueSky01st&#39;s Blog<br />'
+            + '文章作者: BlueSky01st<br />'
+            + '文章链接: <a href="' + url + '">' + url + '</a><br />'
+            + '本文章著作权归作者所有，任何形式的转载都请注明出处。';
+
+        selection.selectAllChildren(newdiv);
+        window.setTimeout(function () {bodyElement.removeChild(newdiv);}, 200);
+    });
+</script>
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+
+
+<!-- 代码块折行 -->
+
+<style type="text/css">
+code[class*="language-"], pre[class*="language-"] { white-space: pre !important; }
+</style>
+
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h2, h3, h4'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h2, h3, h4').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
+    
+
+</main>
+
+
+
+
+    <footer class="page-footer bg-color">
+    
+        <link rel="stylesheet" href="/libs/aplayer/APlayer.min.css">
+<style>
+    .aplayer .aplayer-lrc p {
+        
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 16px !important;
+    }
+
+    .aplayer .aplayer-lrc p.aplayer-lrc-current {
+        
+        font-size: 15px;
+        color: #42b983;
+    }
+
+    
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
+        left: -66px !important;
+    }
+
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
+        left: 0px !important;
+    }
+
+    
+</style>
+<div class="">
+    
+    <div class="row">
+        <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
+                   server="netease"
+                   type="playlist"
+                   id="503838841"
+                   fixed='true'
+                   autoplay='false'
+                   theme='#42b983'
+                   loop='all'
+                   order='random'
+                   preload='auto'
+                   volume='0.7'
+                   list-folded='true'
+        >
+        </meting-js>
+    </div>
+</div>
+
+<script src="/libs/aplayer/APlayer.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+
+    
+    <div class="container row center-align" style="margin-bottom: 15px !important;">
+        <div class="col s12 m8 l8 copy-right">
+            Copyright&nbsp;&copy;
+            <span id="year">2020</span>
+            <a href="/about" target="_blank">BlueSky01st</a>
+            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
+            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
+            <br>
+            
+            
+            
+            
+            
+            
+            <span id="busuanzi_container_site_pv"style='display:none'></span>
+                |&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span id="busuanzi_value_site_pv"
+                    class="white-color"></span>&nbsp;次
+            </span>
+            
+            
+            <span id="busuanzi_container_site_uv"style='display:none'></span>
+                |&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;<span id="busuanzi_value_site_uv"
+                    class="white-color"></span>&nbsp;人
+            </span>
+            
+            <br>
+            
+            <span id="sitetime">载入运行时间...</span>
+            <script>
+                function siteTime() {
+                    var seconds = 1000;
+                    var minutes = seconds * 60;
+                    var hours = minutes * 60;
+                    var days = hours * 24;
+                    var years = days * 365;
+                    var today = new Date();
+                    var startYear = "2020";
+                    var startMonth = "6";
+                    var startDate = "1";
+                    var startHour = "0";
+                    var startMinute = "0";
+                    var startSecond = "0";
+                    var todayYear = today.getFullYear();
+                    var todayMonth = today.getMonth() + 1;
+                    var todayDate = today.getDate();
+                    var todayHour = today.getHours();
+                    var todayMinute = today.getMinutes();
+                    var todaySecond = today.getSeconds();
+                    var t1 = Date.UTC(startYear, startMonth, startDate, startHour, startMinute, startSecond);
+                    var t2 = Date.UTC(todayYear, todayMonth, todayDate, todayHour, todayMinute, todaySecond);
+                    var diff = t2 - t1;
+                    var diffYears = Math.floor(diff / years);
+                    var diffDays = Math.floor((diff / days) - diffYears * 365);
+                    var diffHours = Math.floor((diff - (diffYears * 365 + diffDays) * days) / hours);
+                    var diffMinutes = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours) /
+                        minutes);
+                    var diffSeconds = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours -
+                        diffMinutes * minutes) / seconds);
+                    if (startYear == todayYear) {
+                        document.getElementById("year").innerHTML = todayYear;
+                        document.getElementById("sitetime").innerHTML = "🕙本站已勉强运行 " + diffDays + " 天 " + diffHours +
+                            " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒";
+                    } else {
+                        document.getElementById("year").innerHTML = startYear + " - " + todayYear;
+                        document.getElementById("sitetime").innerHTML = "🕙本站已勉强运行 " + diffYears + " 年 " + diffDays +
+                            " 天 " + diffHours + " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒";
+                    }
+                }
+                setInterval(siteTime, 1000);
+            </script>
+            
+            <br>
+            
+        </div>
+        <div class="col s12 m4 l4 social-link social-statis">
+    <a href="https://github.com/BlueSky01st" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+        <i class="fab fa-github"></i>
+    </a>
+
+
+
+    <a href="mailto:minecraft206127@outlook.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+        <i class="fas fa-envelope-open"></i>
+    </a>
+
+
+
+
+
+
+
+    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=3513799145" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 3513799145" data-position="top" data-delay="50">
+        <i class="fab fa-qq"></i>
+    </a>
+
+
+
+
+
+
+
+    <a href="/atom.xml" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50">
+        <i class="fas fa-rss"></i>
+    </a>
+
+</div>
+		<div id="binft"></div>
+		<script type="text/javascript" charset="UTF-8" src="https://cdn.jsdelivr.net/gh/BlueSky01st/cdn@latest/js/binft.js"></script>
+    </div>
+	
+</footer>
+
+<div class="progress-bar"></div>
+
+
+
+
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;搜索</span>
+            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script src="/js/search.js"></script>
+<script type="text/javascript">
+$(function () {
+    searchFunc("/search.xml", 'searchInput', 'searchResult');
+});
+</script>
+
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fas fa-angle-double-up"></i>
+    </a>
+</div>
+
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
+
+    <!-- Baidu Analytics -->
+
+    <!-- Baidu Push -->
+
+    
+    <script src="/libs/others/clicklove.js" async="async"></script>
+    
+    
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+    
+
+    
+
+    
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i["DaoVoiceObject"] = r;
+            i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o), m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            a.charset = "utf-8";
+            m.parentNode.insertBefore(a, m)
+        })(window, document, "script", ('https:' == document.location.protocol ? 'https:' : 'http:') +
+            "//widget.daovoice.io/widget/6984b559.js", "daovoice")
+        daovoice('init', {
+            app_id: "35545541"
+        });
+        daovoice('update');
+    </script>
+    
+
+    
+    <script type="text/javascript" color="179,179,239"
+        pointColor="92,92,143" opacity='0.8'
+        zIndex="-1" count="300"
+        src="/libs/background/canvas-nest.js"></script>
+    
+
+    
+    
+    <script type="text/javascript" size="150" alpha='0.6'
+        zIndex="-1" src="/libs/background/ribbon-refresh.min.js" async="async"></script>
+    
+
+    
+
+    
+    <script src="/libs/instantpage/instantpage.js" type="module"></script>
+    
+	<script type="text/javascript">
+		var OriginTitile = document.title,
+			st;
+		document.addEventListener("visibilitychange", function () {
+			document.hidden ? (document.title = "看不见我🙈~看不见我🙈~", clearTimeout(st)) : (document.title =
+				"(๑•̀ㅂ•́) ✧被发现了～", st = setTimeout(function () {
+					document.title = OriginTitile
+				}, 3e3))
+		})
+	</script>
+	
+	<script type="text/javascript">
+		WIDGET = {FID: 'GTCScr73Mp'}
+	</script>
+	<!-- 天气插件 -->
+	<script type="text/javascript" src="https://apip.weatherdt.com/float/static/js/r.js?v=1111"></script>
+	<!-- 雪花特效 -->
+	
+	
+
+</body>
+
+</html>

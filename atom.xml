@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>BlueSky01st&#39;s Blog</title>
+  
+  <subtitle>BlueSky01st</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://bluesky01st.js.org/"/>
+  <updated>2020-07-26T07:53:46.067Z</updated>
+  <id>https://bluesky01st.js.org/</id>
+  
+  <author>
+    <name>BlueSky01st</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Python Note:requests(1)</title>
+    <link href="https://bluesky01st.js.org/posts/python-note-requests-1.html"/>
+    <id>https://bluesky01st.js.org/posts/python-note-requests-1.html</id>
+    <published>2020-07-25T10:52:23.000Z</published>
+    <updated>2020-07-26T07:53:46.067Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;安装&quot;&gt;&lt;a href=&quot;#安装&quot; class=&quot;headerlink&quot; title=&quot;安装&quot;&gt;&lt;/a&gt;安装&lt;/h2&gt;&lt;pre class=&quot;line-numbers language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;pip
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Python" scheme="https://bluesky01st.js.org/categories/Python/"/>
+    
+    
+      <category term="Python" scheme="https://bluesky01st.js.org/tags/Python/"/>
+    
+      <category term="requests" scheme="https://bluesky01st.js.org/tags/requests/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Markdown Emoji速查</title>
+    <link href="https://bluesky01st.js.org/posts/markdown-emoji-yu-fa.html"/>
+    <id>https://bluesky01st.js.org/posts/markdown-emoji-yu-fa.html</id>
+    <published>2020-07-19T12:36:05.000Z</published>
+    <updated>2020-07-26T05:19:10.171Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;emoji-list&quot;&gt;&lt;a href=&quot;#emoji-list&quot; class=&quot;headerlink&quot; title=&quot;emoji-list&quot;&gt;&lt;/a&gt;emoji-list&lt;/h1&gt;&lt;p&gt;emoji list&lt;/p&gt;
+&lt;h2
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Markdown" scheme="https://bluesky01st.js.org/categories/Markdown/"/>
+    
+    
+      <category term="Markdown" scheme="https://bluesky01st.js.org/tags/Markdown/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>自定义Matery主题教程</title>
+    <link href="https://bluesky01st.js.org/posts/zi-ding-yi-matery-zhu-ti-jiao-cheng.html"/>
+    <id>https://bluesky01st.js.org/posts/zi-ding-yi-matery-zhu-ti-jiao-cheng.html</id>
+    <published>2020-06-22T06:45:52.000Z</published>
+    <updated>2020-08-10T09:55:59.480Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;官方文档&quot;&gt;&lt;a href=&quot;#官方文档&quot; class=&quot;headerlink&quot; title=&quot;官方文档&quot;&gt;&lt;/a&gt;官方文档&lt;/h2&gt;&lt;p&gt;先按照官方文档操作一遍—&amp;gt;&lt;a
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Hexo" scheme="https://bluesky01st.js.org/categories/Hexo/"/>
+    
+    
+      <category term="Hexo" scheme="https://bluesky01st.js.org/tags/Hexo/"/>
+    
+      <category term="Blog" scheme="https://bluesky01st.js.org/tags/Blog/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Live2D看板娘(bilibili-2233)</title>
+    <link href="https://bluesky01st.js.org/posts/live2d-kan-ban-niang-bilibili-2233.html"/>
+    <id>https://bluesky01st.js.org/posts/live2d-kan-ban-niang-bilibili-2233.html</id>
+    <published>2020-06-12T05:59:44.000Z</published>
+    <updated>2020-08-14T10:44:29.890Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;1-安装插件&quot;&gt;&lt;a href=&quot;#1-安装插件&quot; class=&quot;headerlink&quot; title=&quot;1. 安装插件&quot;&gt;&lt;/a&gt;1. 安装插件&lt;/h2&gt;&lt;p&gt;在博客根目录下运行&lt;/p&gt;
+&lt;pre class=&quot;line-numbers
+        
+      
+    
+    </summary>
+    
+    
+    
+      <category term="Hexo" scheme="https://bluesky01st.js.org/tags/Hexo/"/>
+    
+      <category term="Blog" scheme="https://bluesky01st.js.org/tags/Blog/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>「后浪」原文</title>
+    <link href="https://bluesky01st.js.org/posts/hou-lang-yuan-wen.html"/>
+    <id>https://bluesky01st.js.org/posts/hou-lang-yuan-wen.html</id>
+    <published>2020-06-10T00:50:59.000Z</published>
+    <updated>2020-06-10T01:24:27.682Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;那些口口声声 “一代不如一代”的人&lt;/p&gt;
+&lt;p&gt;应该看看你们&lt;/p&gt;
+&lt;p&gt;就像我一样&lt;/p&gt;
+&lt;p&gt;我看着你们 满怀羡慕&lt;/p&gt;
+&lt;p&gt;人类积攒了几千年的财富&lt;/p&gt;
+&lt;p&gt;所有的知识、见识、智慧和艺术&lt;/p&gt;
+&lt;p&gt;像是专门为你们准备的礼物&lt;/p&gt;
+&lt;p&gt;科技繁荣
+        
+      
+    
+    </summary>
+    
+    
+      <category term="杂" scheme="https://bluesky01st.js.org/categories/%E6%9D%82/"/>
+    
+    
+      <category term="杂" scheme="https://bluesky01st.js.org/tags/%E6%9D%82/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>用Hexo搭建一个博客</title>
+    <link href="https://bluesky01st.js.org/posts/yong-hexo-da-jian-yi-ge-bo-ke.html"/>
+    <id>https://bluesky01st.js.org/posts/yong-hexo-da-jian-yi-ge-bo-ke.html</id>
+    <published>2020-06-01T02:46:33.000Z</published>
+    <updated>2020-06-04T12:49:40.872Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;用Hexo搭建一个简单博客。&lt;/p&gt;
+&lt;h2 id=&quot;1-安装Git&quot;&gt;&lt;a href=&quot;#1-安装Git&quot; class=&quot;headerlink&quot; title=&quot;1. 安装Git&quot;&gt;&lt;/a&gt;1.
+        
+      
+    
+    </summary>
+    
+    
+    
+      <category term="Hexo" scheme="https://bluesky01st.js.org/tags/Hexo/"/>
+    
+      <category term="Blog" scheme="https://bluesky01st.js.org/tags/Blog/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>雪花特效</title>
+    <link href="https://bluesky01st.js.org/posts/xue-hua-te-xiao.html"/>
+    <id>https://bluesky01st.js.org/posts/xue-hua-te-xiao.html</id>
+    <published>2020-05-31T03:35:01.000Z</published>
+    <updated>2020-07-26T05:18:54.881Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;在博客中加入雪花特效&quot;&gt;&lt;a href=&quot;#在博客中加入雪花特效&quot; class=&quot;headerlink&quot; title=&quot;在博客中加入雪花特效&quot;&gt;&lt;/a&gt;在博客中加入雪花特效&lt;/h1&gt;&lt;p&gt;&lt;strong&gt;注意：
+        
+      
+    
+    </summary>
+    
+    
+    
+      <category term="Hexo" scheme="https://bluesky01st.js.org/tags/Hexo/"/>
+    
+      <category term="Blog" scheme="https://bluesky01st.js.org/tags/Blog/"/>
+    
+  </entry>
+  
+</feed>
