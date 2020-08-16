@@ -496,14 +496,14 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2020-08-10
+                    2020-08-16
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    2.7k
+                    2.8k
                 </div>
                 
 
@@ -778,7 +778,7 @@
         <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
     <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>main</span><span class="token punctuation">></span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h3 id="JsDelivr加速文章图片"><a href="#JsDelivr加速文章图片" class="headerlink" title="JsDelivr加速文章图片"></a>JsDelivr加速文章图片</h3><p>在<code>/source/js/others/</code>新建<code>jsdelivr.js</code>：</p>
+<h2 id="JsDelivr加速文章图片"><a href="#JsDelivr加速文章图片" class="headerlink" title="JsDelivr加速文章图片"></a>JsDelivr加速文章图片</h2><p>在<code>/source/js/others/</code>新建<code>jsdelivrpicc.js</code>：</p>
 <pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">var</span> name <span class="token operator">=</span> <span class="token string">"BlueSky01st"</span><span class="token punctuation">;</span>
 <span class="token keyword">var</span> repository <span class="token operator">=</span> <span class="token string">"bluesky01st.github.io"</span><span class="token punctuation">;</span>
 <span class="token keyword">if</span><span class="token punctuation">(</span>document<span class="token punctuation">.</span>domain <span class="token operator">!=</span> <span class="token string">'localhost'</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
@@ -789,7 +789,11 @@
         document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">"articleContent"</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">getElementsByTagName</span><span class="token punctuation">(</span><span class="token string">'img'</span><span class="token punctuation">)</span><span class="token punctuation">[</span>key<span class="token punctuation">]</span><span class="token punctuation">.</span>src <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">"articleContent"</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">getElementsByTagName</span><span class="token punctuation">(</span><span class="token string">'img'</span><span class="token punctuation">)</span><span class="token punctuation">[</span>key<span class="token punctuation">]</span><span class="token punctuation">.</span>src<span class="token punctuation">.</span><span class="token function">replace</span><span class="token punctuation">(</span>document<span class="token punctuation">.</span>domain<span class="token punctuation">,</span><span class="token string">"cdn.jsdelivr.net/gh/"</span> <span class="token operator">+</span> name <span class="token operator">+</span> <span class="token string">"/"</span> <span class="token operator">+</span> repository<span class="token punctuation">)</span>
     <span class="token punctuation">}</span>
 <span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>把第一行的<code>name</code>和第二行的<code>repository</code>的值改为你的就行了。</p>
+<p>把第一行的<code>name</code>和第二行的<code>repository</code>的值改为你的。<br>到<code>_config.yml</code>写入:</p>
+<pre class="line-numbers language-yaml"><code class="language-yaml"><span class="token key atrule">jsdelivrpic</span><span class="token punctuation">:</span>
+    <span class="token key atrule">enable</span><span class="token punctuation">:</span> <span class="token boolean important">true</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<p>到<code>_config.yml</code>的<code>libs\js</code>写入:</p>
+<pre class="line-numbers language-yaml"><code class="language-yaml"><span class="token key atrule">jsdelivrpic</span><span class="token punctuation">:</span> /libs/others/jsdelivrpic.js<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <h2 id="博客支持PWA"><a href="#博客支持PWA" class="headerlink" title="博客支持PWA"></a>博客支持PWA</h2><p>安装插件:</p>
 <pre class="line-numbers language-bash"><code class="language-bash"><span class="token function">npm</span> <span class="token function">install</span> hexo-offline<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>在博客根目录<code>_config.yml</code>中新增:</p>
@@ -861,6 +865,18 @@
   <span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>把第二行和第三行的改成你的，再运行</p>
 <pre class="line-numbers language-bash"><code class="language-bash">hexo cl <span class="token operator">&amp;&amp;</span> hexo g<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>在<code>themes/matery/layout/_partial/head.ejs</code>中写入:</p>
+<pre class="line-numbers language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>link</span> <span class="token attr-name">rel</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>manifest<span class="token punctuation">"</span></span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>/manifest.json<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h2 id="优化url"><a href="#优化url" class="headerlink" title="优化url"></a>优化url</h2><p>安装插件<code>hexo-abbrlink</code></p>
+<pre class="line-numbers language-bash"><code class="language-bash">`npm <span class="token function">install</span> hexo-abbrlink --save<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>把<code>_config.yml</code>中<code>permalink</code>改为</p>
+<pre class="line-numbers language-yaml"><code class="language-yaml"><span class="token key atrule">permalink</span><span class="token punctuation">:</span> posts/<span class="token punctuation">:</span>abbrlink.html<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>再新增</p>
+<pre class="line-numbers language-yaml"><code class="language-yaml"><span class="token comment" spellcheck="true"># abbrlink</span>
+<span class="token key atrule">abbrlink</span><span class="token punctuation">:</span>
+  <span class="token key atrule">alg</span><span class="token punctuation">:</span> crc32  
+  <span class="token key atrule">rep</span><span class="token punctuation">:</span> hex    <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<p>最后运行<code>hexo cl &amp;&amp; hexo g</code>.</p>
 <script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
@@ -904,7 +920,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://bluesky01st.js.org/posts/zi-ding-yi-matery-zhu-ti-jiao-cheng.html">https://bluesky01st.js.org/posts/zi-ding-yi-matery-zhu-ti-jiao-cheng.html</a>
+                    <a href="https://bluesky01st.js.org/posts/d76019f8.html">https://bluesky01st.js.org/posts/d76019f8.html</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -1283,7 +1299,7 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/posts/markdown-emoji-yu-fa.html">
+                <a href="/posts/65dc6fb7.html">
                     <div class="card-image">
                         
                         
@@ -1332,7 +1348,7 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/posts/live2d-kan-ban-niang-bilibili-2233.html">
+                <a href="/posts/2afd864b.html">
                     <div class="card-image">
                         
                         <img src="https://s1.ax1x.com/2020/06/12/tOxxlq.png" class="responsive-img" alt="Live2D看板娘(bilibili-2233)">
