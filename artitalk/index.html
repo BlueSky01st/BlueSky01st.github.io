@@ -371,14 +371,15 @@
                     <i class="fas fa-comment-dots"></i>&nbsp;&nbsp;说说
                 </div>
                 
-    
-    <script>
-    var appID="4uVR1MJ3hl5KuFKiEYH43MEq-MdYXbMMI";
-    var appKEY="4623T5r1EX3BC3ArN1wa711Q";
-    </script>
-    
-    <div id="artitalk_main"></div>
-    <script type="text/javascript" src="https://unpkg.com/artitalk"></script>
+
+<script type="text/javascript" src="https://unpkg.com/artitalk"></script>//引用artitalk
+<div id="artitalk_main"></div>//存放说说的容器
+<script>
+new Artitalk({
+    appId: '4uVR1MJ3hl5KuFKiEYH43MEq-MdYXbMMI',
+    appKey: '4623T5r1EX3BC3ArN1wa711Q',
+})
+</script>
 
 <script>
         document.querySelectorAll('.github-emoji')
