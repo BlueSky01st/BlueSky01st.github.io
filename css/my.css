@@ -65,4 +65,12 @@
 #live2d{
 	z-index:0;
 }
-	
+::selection {
+    background:#d6edff;
+}
+::-moz-selection {
+    background:#d6edff;
+}
+::-webkit-selection {
+    background:#d6edff;
+}
